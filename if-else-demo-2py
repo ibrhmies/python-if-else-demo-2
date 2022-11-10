@@ -1,0 +1,44 @@
+#kullanıcıdan aldıgınız isim yaş eğitim durumuyla ehlşyet alabilme durumunu kontrol ediniz.
+#->ehliyet alma yaşı en az 18 dir ve eğitim durumu lise veya üniversite olmalıdır.
+
+isim = input("isminizi giriniz: ")
+yas = int(input("Yaşınızı giriniz: "))
+egitimDurumu = input("Eğitim durmunuzu giriniz: ")
+
+if (yas >= 18):
+    print("Yaşınız ehliyet için uygundur. ")
+else:
+    print("Yaşınız ehliyet için uygun değildir!! ")
+
+if (egitimDurumu == "lise"):
+    print("Eğitim durmunuz ehliyet için yeterlidir. ")
+elif (egitimDurumu == "üniversite"):
+    print("Eğitim durmunuz ehliyet için yeterlidir. ")
+else:
+    print("Eğitim durumunuz ehliyet için uygun değildir!! ")
+
+
+# 2 yazılı bir sözlü notu alıp ortalamasını hesaplayın.
+
+yazili1 = float(input("ilk yazılı notunuzu giriniz: "))
+yazili2 = float(input("ikinci yazılı notunuzu giriniz: "))
+sozlu = float(input("Sözlü notunuzu giriniz: "))
+
+
+ortalama = ((yazili1+yazili2+sozlu) / 3)
+
+if (ortalama<=24) and (ortalama>0):
+    print(f"Ortalamanız {ortalama} ve notunuz '0' ")
+elif (ortalama<=44) and (ortalama>=25):
+    print(f"Ortalamanız {ortalama} ve notunuz '1' ")
+elif (ortalama<=54) and (ortalama>=45):
+    print(f"Ortalamanız {ortalama} ve notunuz '2' ")   
+elif (ortalama<=69) and (ortalama>=55):
+    print(f"Ortalamanız {ortalama} ve notunuz '3' ")
+elif (ortalama<=84) and (ortalama>=70):
+    print(f"Ortalamanız {ortalama} ve notunuz '4' ")
+elif (ortalama<=100) and (ortalama>=85):
+    print(f"Ortalamanız {ortalama} ve notunuz '5' ")
+else:
+    print("Yanlış bilgi girdiniz!! ")
+    
